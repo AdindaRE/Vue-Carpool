@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+}
+
+body{
+  font-family: 'Roboto';
+  font-style: normal;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #166BC8;
+  transition: 0.4s;
+}
+
+.blue{
+  color: #166BC8;
+}
+
+.yellow{
+  color:#F1C933;
+}
+
+.button{
+  color: black;
+  background-color:#F1C933;
+  padding:15px;
+  border-radius: 9px;
+  border:none;
+  width: 140px;
+  font-size: larger;
+  cursor: pointer;
+}
