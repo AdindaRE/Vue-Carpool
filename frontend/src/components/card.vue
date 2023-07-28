@@ -81,7 +81,7 @@ export default {
       :key="ride._id"
     >
       <div class="wrapper">
-        <h3 class="card-title departure black">{{ departureAddresses[ride._id] }}</h3>
+        <h3 class="card-title departure purple">{{ departureAddresses[ride._id] }}</h3>
         <svg
           style="margin-top: 4px;"
           xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@ export default {
             />
           </g>
         </svg>
-        <h3 class="card-title destination blue">{{ destinationAddresses[ride._id] }}</h3>
+        <h3 class="card-title destination teal">{{ destinationAddresses[ride._id] }}</h3>
       </div>
       <div class="wrapper">
         <p class="card-time margin-left">{{ ride.departure_time }}</p>
@@ -106,10 +106,10 @@ export default {
       <div class="wrapper">
         <div class="left-section">
           <img src="../../img/driver.svg" alt="Avatar">
-          <p class="card-text darkblue"> &nbsp;&nbsp;{{ ride.driver }}</p>
+          <p class="card-text purple"> &nbsp;&nbsp;{{ ride.driver }}</p>
 
           <p class="card-text">
-            <span class="black">&nbsp;&nbsp;{{ ride.driver_rating }}</span>
+            <span class="darkgray">&nbsp;&nbsp;{{ ride.driver_rating }}</span>
             <rate />
           </p>
         </div>
@@ -132,15 +132,15 @@ export default {
   height: 120px;
   padding: 10px;
   font-family: Nunito;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  border-radius: 9px;
-  background-color: white;
+  border: 1px solid white; /* White border */
+  border-radius: 0px;
   margin-top: 20px;
   margin-bottom: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   z-index: 9998;
+  color: white; /* Set text color to white */
 }
 
 .wrapper {
@@ -152,7 +152,7 @@ export default {
 .card-title {
   font-family: 'Poppins';
   font-weight: normal;
-  color: #166bc8;
+  color: white; /* Set text color to white */
   margin-bottom: 10px;
   margin-left: 10px;
   overflow: hidden;
@@ -161,7 +161,7 @@ export default {
 }
 
 .card-time {
-  color: black;
+  color: white; /* Set text color to white */
   font-family: 'Nunito';
   font-style: normal;
   margin-bottom: 10px;
@@ -193,23 +193,6 @@ export default {
 .right-section {
   margin-left: auto;
   margin-right: 10px;
-}
-
-.blue {
-  color: #166bc8;
-}
-
-.darkblue {
-  color: #1B2B71;
-  font-weight: bold;
-}
-
-.yellow {
-  color: #f1c933;
-}
-
-.black {
-  color: black;
 }
 
 .margin-left {

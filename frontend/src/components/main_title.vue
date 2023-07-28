@@ -1,5 +1,5 @@
 <template>
-      <h1> {{ title }}</h1>
+      <h1>{{ title }}</h1>
   </template>
   
   <script>
@@ -9,10 +9,9 @@
   </script>
 
   <style>
-h1{
+h1 {
   font-family: 'Poppins';
   font-weight: normal;
-  color: #1B2B71;
-
-}
+  color: #ffffff;
+  }
 </style>
