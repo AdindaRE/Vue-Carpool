@@ -76,7 +76,7 @@ export default {
   <div>
     <div @click="onClick(ride._id)" class="card" v-for="ride in ridesData" :key="ride._id">
       <div class="wrapper">
-        <h3 class="card-title departure purple">{{ departureAddresses[ride._id] }}</h3>
+        <h3 class="card-title departure">{{ departureAddresses[ride._id] }}</h3>
         <svg xmlns="http://www.w3.org/2000/svg" width="17.333" height="7.969" viewBox="0 0 17.333 7.969">
           <g id="arrow" transform="translate(17.333) rotate(90)">
             <path id="Path_67" data-name="Path 67"
@@ -84,7 +84,7 @@ export default {
               fill="#fff" />
           </g>
         </svg>
-        <h3 class="card-title destination teal">{{ destinationAddresses[ride._id] }}</h3>
+        <h3 class="card-title destination">{{ destinationAddresses[ride._id] }}</h3>
       </div>
       <div class="wrapper">
         <p class="card-time margin-left">{{ ride.departure_time }}</p>
@@ -93,10 +93,10 @@ export default {
       <div class="wrapper">
         <div class="left-section">
           <img src="../../img/driver.svg" alt="Avatar">
-          <p class="card-text purple"> &nbsp;&nbsp;{{ ride.driver }}</p>
+          <p class="card-text"> &nbsp;&nbsp;{{ ride.driver }}</p>
 
           <p class="card-text">
-            <span class="darkgray">&nbsp;&nbsp;{{ ride.driver_rating }}</span>
+            <span class="">&nbsp;&nbsp;{{ ride.driver_rating }}</span>
             <rate />
           </p>
         </div>

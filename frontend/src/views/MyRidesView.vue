@@ -47,7 +47,7 @@ export default {
         const response = await axios.get('https://maps.googleapis.com/maps/api/geocode/json', {
           params: {
             latlng: `${latitude},${longitude}`,
-            key: 'AIzaSyAsfiqTHERuY69mAFw6m2FP3g8nXFpSPnQ',
+            key: 'API_KEY',
           },
         });
 
@@ -79,7 +79,7 @@ export default {
     },
 
     getCardClass(index) {
-      return index % 2 === 0 ? 'card bg-blue white' : 'card bg-yellow black';
+      return index % 2 === 0 ? 'card pink white' : 'card bg-teal white';
     },
     getLimitedAddress(address) {
       const words = address.split(' ');
@@ -95,12 +95,12 @@ export default {
 
 <template>
   <div>
-    <main_title title="My Rides" />
-    <h3 class="title">Upcoming Rides:</h3>
+    <main_title title="Airport Bound! 🚀 Buckle Up and Let's Go!" />
+    <h3 class="card-title"> 🛫 Upcoming Airport Adventures</h3>
     <div class="card-container">
       <div @click="onClick(ride._id)" :class="getCardClass(index)" v-for="(ride, index) in bookedRides" :key="ride._id">
         <div class="wrapper center">
-          <p class="card-title">{{ getLimitedAddress(destinationAddresses[ride._id]) }}</p>
+          <p class="title">{{ getLimitedAddress(destinationAddresses[ride._id]) }}</p>
         </div>
         <div class="wrapper">
           <div class="time-column">
@@ -122,26 +122,26 @@ export default {
       </div>
     </div>
 
-    <h3 class="title">Past Rides:</h3>
+    <h3 class="card-title">🏁 Successful Airport Ventures</h3>
     <div class="card-container">
-      <div class="card black bg-grey">
+      <div class="card bg-blue grey">
         <div class="wrapper center">
-          <p class="card-address">Zagreb Airport</p>
+          <p class="title">Zagreb Airport</p>
         </div>
         <div class="wrapper center">
           <div class="time-column">
             <p class="time-label">Departure Time:</p>
-            <p class="card-time black">5:30</p>
+            <p class="card-time">5:30</p>
           </div>
           <div class="time-column">
             <p class="time-label">Arrival Time:</p>
-            <p class="card-time black">6:30</p>
+            <p class="card-time">6:30</p>
           </div>
         </div>
         <div class="wrapper">
           <div class="left-section">
             <img src="../../img/driver.svg" alt="Avatar">
-          <p class="card-text"> &nbsp;&nbsp;Pedro</p>
+            <p class="card-text"> &nbsp;&nbsp;Pedro</p>
           </div>
           <div class="right-section">
             <p>&nbsp;08.06.2023</p>
@@ -160,18 +160,20 @@ export default {
 .card {
   cursor: pointer;
   width: 100%;
-  height: 120px;
+  height: 140px;
   padding: 10px;
-  font-family: 'Poppins';
-  font-weight: bold;
-  color: white;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  border-radius: 9px;
+  font-family: Nunito;
+  border: 1px solid white;
+  /* White border */
+  border-radius: px;
   margin-top: 20px;
+  margin-bottom: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   z-index: 9998;
+  color: white;
+  /* Set text color to white */
 }
 
 .wrapper {
@@ -183,9 +185,12 @@ export default {
 
 .wrapper-driver {
   text-align: left;
+
 }
 
 .card-title {
+  color: white;
+  font-size: 24px;
   margin-bottom: 10px;
   margin-left: 10px;
   overflow: hidden;
@@ -218,7 +223,7 @@ export default {
 .card-text {
   font-family: 'Nunito';
   font-style: normal;
-  font-size: 18px;
+  font-size: 16px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -234,33 +239,20 @@ export default {
   margin-right: 10px;
 }
 
-.blue {
-  color: #166bc8;
+.pink {
+  background: linear-gradient(135deg, #A690E0, #CFA7E8);
+}
+
+.bg-teal {
+  background: linear-gradient(-45deg, #96B8FF, #CFA7E8);
 }
 
 .bg-blue {
-  background-color: #166bc8;
+  background-color: #96B8FF;
 }
 
-.darkblue {
-  color: #1B2B71;
-  font-weight: bold;
-}
-
-.yellow {
-  color: #f1c933;
-}
-
-.bg-yellow {
-  background-color: #f1c933;
-}
-
-.bg-grey {
-  background-color: #AEB3BD;
-}
-
-.black {
-  color: black;
+.grey {
+  color: grey;
 }
 
 .white {
@@ -274,8 +266,7 @@ export default {
 }
 
 .title {
+  font-size: 16px;
   margin-top: 30px;
 }
-
-
 </style>
