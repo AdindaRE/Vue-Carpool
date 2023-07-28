@@ -27,7 +27,7 @@ export default {
         const response = await axios.get('https://maps.googleapis.com/maps/api/geocode/json', {
           params: {
             latlng: `${latitude},${longitude}`,
-            key: 'AIzaSyAsfiqTHERuY69mAFw6m2FP3g8nXFpSPnQ',
+            key: 'API_KEY',
           },
         });
 
@@ -74,27 +74,14 @@ export default {
 
 <template>
   <div>
-    <div
-      @click="onClick(ride._id)"
-      class="card"
-      v-for="ride in ridesData"
-      :key="ride._id"
-    >
+    <div @click="onClick(ride._id)" class="card" v-for="ride in ridesData" :key="ride._id">
       <div class="wrapper">
         <h3 class="card-title departure purple">{{ departureAddresses[ride._id] }}</h3>
-        <svg
-          style="margin-top: 4px;"
-          xmlns="http://www.w3.org/2000/svg"
-          width="17.333"
-          height="7.969"
-          viewBox="0 0 17.333 7.969"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" width="17.333" height="7.969" viewBox="0 0 17.333 7.969">
           <g id="arrow" transform="translate(17.333) rotate(90)">
-            <path
-              id="Path_67"
-              data-name="Path 67"
-              d="M2.008,1.875C.93,2.908,.038,3.782,.027,3.818A.39.39,0,0,0,.5,4.336c.046-.021.761-.68,1.583-1.47l1.5-1.438L3.6,9.271c.018,8.393.007,7.882.176,8.02a.55.55,0,0,0,.423,0c.169-.138.159.374.176-8.02l.018-7.843,1.5,1.438c.821.79,1.537,1.452,1.586,1.47a.379.379,0,0,0,.494-.363c0-.12-.025-.169-.176-.328C7.564,3.405,4.028.014,3.993,0,3.979,0,3.087.839,2.008,1.875Z"
-            />
+            <path id="Path_67" data-name="Path 67"
+              d="M2.008,1.875C.93,2.908.038,3.782.027,3.818A.39.39,0,0,0,.5,4.336c.046-.021.761-.68,1.583-1.47l1.5-1.438L3.6,9.271c.018,8.393.007,7.882.176,8.02a.55.55,0,0,0,.423,0c.169-.138.159.374.176-8.02l.018-7.843,1.5,1.438c.821.79,1.537,1.452,1.586,1.47a.379.379,0,0,0,.494-.363c0-.12-.025-.169-.176-.328C7.564,3.405,4.028.014,3.993,0,3.979,0,3.087.839,2.008,1.875Z"
+              fill="#fff" />
           </g>
         </svg>
         <h3 class="card-title destination teal">{{ destinationAddresses[ride._id] }}</h3>
@@ -114,13 +101,12 @@ export default {
           </p>
         </div>
         <span class="card-text right-section">
-            <p>{{ ride.price }} €</p>
+          <p>{{ ride.price }} €</p>
         </span>
       </div>
     </div>
   </div>
   <div style="margin-bottom: 100px;"></div>
-
 </template>
 
 
@@ -129,18 +115,20 @@ export default {
 .card {
   cursor: pointer;
   width: 100%;
-  height: 120px;
+  height: 140px;
   padding: 10px;
   font-family: Nunito;
-  border: 1px solid white; /* White border */
-  border-radius: 0px;
+  border: 1px solid white;
+  /* White border */
+  border-radius: px;
   margin-top: 20px;
   margin-bottom: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   z-index: 9998;
-  color: white; /* Set text color to white */
+  color: white;
+  /* Set text color to white */
 }
 
 .wrapper {
@@ -152,7 +140,8 @@ export default {
 .card-title {
   font-family: 'Poppins';
   font-weight: normal;
-  color: white; /* Set text color to white */
+  color: white;
+  /* Set text color to white */
   margin-bottom: 10px;
   margin-left: 10px;
   overflow: hidden;
@@ -161,7 +150,8 @@ export default {
 }
 
 .card-time {
-  color: white; /* Set text color to white */
+  color: white;
+  /* Set text color to white */
   font-family: 'Nunito';
   font-style: normal;
   margin-bottom: 10px;
@@ -173,10 +163,14 @@ export default {
 .card-text {
   font-family: 'Nunito';
   font-style: normal;
-  font-size: 18px;
+  font-size: 24px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+svg {
+  margin-top: 10px;
 }
 
 .wrapper {
