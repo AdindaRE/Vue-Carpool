@@ -131,7 +131,7 @@ export default {
   width: 100%;
   height: 120px;
   padding: 10px;
-  font-family: Roboto;
+  font-family: Nunito;
   border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 9px;
   background-color: white;
@@ -150,7 +150,7 @@ export default {
 }
 
 .card-title {
-  font-family: Bebas Neue;
+  font-family: 'Poppins';
   font-weight: normal;
   color: #166bc8;
   margin-bottom: 10px;
@@ -162,7 +162,7 @@ export default {
 
 .card-time {
   color: black;
-  font-family: 'Roboto';
+  font-family: 'Nunito';
   font-style: normal;
   margin-bottom: 10px;
   overflow: hidden;
@@ -171,7 +171,7 @@ export default {
 }
 
 .card-text {
-  font-family: 'Roboto';
+  font-family: 'Nunito';
   font-style: normal;
   font-size: 18px;
   overflow: hidden;

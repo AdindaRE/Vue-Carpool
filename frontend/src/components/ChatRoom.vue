@@ -58,7 +58,7 @@ export default {
 				margin-right: 15px;
 			}
 			.message-text {
-				font-family: Bebas Neue;
+				font-family:'Poppins';
     			font-weight: normal;
 				color: black;
 				flex: 1;
@@ -74,7 +74,7 @@ export default {
 			box-sizing: border-box;
 		}
 		button {
-			font-family: Bebas Neue;
+			font-family: 'Poppins';
     		font-weight: normal;
 			background-color:#F1C933;
 			color:black;

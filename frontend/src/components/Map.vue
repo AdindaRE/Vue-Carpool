@@ -158,7 +158,7 @@ export default {
 }
 
 .font-regular {
-  font-family: Roboto;
+  font-family: 'Nunito';
   font-size: 16px;
   font-weight: regular;
 }
@@ -171,7 +171,7 @@ export default {
   flex: 1;
   margin-bottom: 10px;
   margin-top: 10px;
-  font-family: Bebas Neue;
+  font-family: 'Poppins';
   font-size: 18px;
   font-weight: bold;
 }

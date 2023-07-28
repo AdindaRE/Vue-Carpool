@@ -138,7 +138,7 @@
 }
 
 .font-bold {
-  font-family: Bebas Neue;
+  font-family: 'Poppins';
   font-size: 18px;
   font-weight: bold;
 }

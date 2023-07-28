@@ -10,7 +10,7 @@
 
   <style>
 h1{
-  font-family: Bebas Neue;
+  font-family: 'Poppins';
   font-weight: normal;
   color: #1B2B71;
 

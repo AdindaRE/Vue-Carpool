@@ -78,7 +78,7 @@ export default {
 
 <style>
 body {
-	font-family: Bebas Neue;
+	font-family: 'Poppins';
     font-weight: normal;
     color: #166BC8;
 	margin: 0;

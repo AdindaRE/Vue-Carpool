@@ -41,7 +41,7 @@
 
 <style>
 .subtitle {
-  font-family: 'Bebas Neue';
+  font-family: 'Poppins';
   font-weight: normal;
   font-size: 18px;
   margin-top: 30px;
@@ -62,7 +62,7 @@
   width: 100%; 
   height: 120px;
   padding: 10px;
-  font-family: 'Bebas Neue';
+  font-family: 'Poppins';
   font-weight: bold;
   color: black;
   border: 1px solid rgba(0, 0, 0, 0.25);
@@ -89,7 +89,7 @@
 }
 
 .card-content {
-  font-family: 'Bebas Neue';
+  font-family: 'Poppins';
   font-weight: normal;
   font-size: 18px;
   color: black;

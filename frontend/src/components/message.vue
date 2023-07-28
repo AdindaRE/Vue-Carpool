@@ -20,7 +20,7 @@
   width: 100%;
   height: 120px;
   padding: 10px;
-  font-family: 'Bebas Neue';
+  font-family: 'Poppins';
   font-weight: normal;
   border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 9px;
