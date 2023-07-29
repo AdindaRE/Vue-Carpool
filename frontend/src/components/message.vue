@@ -18,18 +18,18 @@
 .card {
   cursor: pointer;
   width: 100%;
-  height: 120px;
+  height: 180px;
   padding: 10px;
-  font-family: 'Poppins';
-  font-weight: normal;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  border-radius: 9px;
-  background-color: #f2f2f2;
-  margin-top: 35px;
-  margin-bottom: 20px;
+  font-family: Nunito;
+  font-size: 24px;
+  border: 1px solid white;
+  /* White border */
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  z-index: 9998;
+  color: white;
+  /* Set text color to white */
 }
 
 .card::after {
@@ -66,11 +66,10 @@
 
 .time-right {
   color: #aaa;
-margin-left: 40px;
+  margin-left: 40px;
 }
 
-p{
-  color: black;
+p {
+  color: white;
 }
-
 </style>

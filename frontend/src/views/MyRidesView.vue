@@ -95,8 +95,9 @@ export default {
 
 <template>
   <div>
-    <main_title title="Airport Bound! 🚀 Buckle Up and Let's Go!" />
-    <h3 class="card-title"> 🛫 Upcoming Airport Adventures</h3>
+    <main_title title="Ready to Roll?" />
+    <h3 class="card-title">Airport Bound! 🚀</h3>
+    <h3 class="card-title"> 🚗 Upcoming Rides</h3>
     <div class="card-container">
       <div @click="onClick(ride._id)" :class="getCardClass(index)" v-for="(ride, index) in bookedRides" :key="ride._id">
         <div class="wrapper center">
@@ -122,9 +123,9 @@ export default {
       </div>
     </div>
 
-    <h3 class="card-title">🏁 Successful Airport Ventures</h3>
+    <h3 class="card-title">🎉 Completed Rides</h3>
     <div class="card-container">
-      <div class="card bg-blue grey">
+      <div class="card bg-blue transparent">
         <div class="wrapper center">
           <p class="title">Zagreb Airport</p>
         </div>
@@ -150,8 +151,6 @@ export default {
       </div>
     </div>
     <div style="margin-bottom: 100px;"></div>
-
-    <banner />
     <navbar />
   </div>
 </template>
@@ -160,12 +159,11 @@ export default {
 .card {
   cursor: pointer;
   width: 100%;
-  height: 140px;
+  height: 200px;
   padding: 10px;
   font-family: Nunito;
   border: 1px solid white;
   /* White border */
-  border-radius: px;
   margin-top: 20px;
   margin-bottom: 20px;
   overflow: hidden;
@@ -180,7 +178,7 @@ export default {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .wrapper-driver {
@@ -191,8 +189,8 @@ export default {
 .card-title {
   color: white;
   font-size: 24px;
-  margin-bottom: 10px;
-  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -205,6 +203,7 @@ export default {
 .time-label {
   font-family: 'Nunito';
   font-style: normal;
+  font-size: 16px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -223,7 +222,7 @@ export default {
 .card-text {
   font-family: 'Nunito';
   font-style: normal;
-  font-size: 16px;
+  font-size: 24px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -251,8 +250,8 @@ export default {
   background-color: #96B8FF;
 }
 
-.grey {
-  color: grey;
+.transparent {
+  opacity: 0.5;
 }
 
 .white {
@@ -266,7 +265,7 @@ export default {
 }
 
 .title {
-  font-size: 16px;
+  font-size: 24px;
   margin-top: 30px;
 }
 </style>

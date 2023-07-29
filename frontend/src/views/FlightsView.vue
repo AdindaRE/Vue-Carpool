@@ -10,15 +10,16 @@ export default {
     flights,
     banner,
     navbar,
-}  
+  }
 }
 </script>
 
 <template>
   <div>
     <main_title title="Flights" />
-    <flights/>
-    <banner/>
-    <navbar/>
+    <flights />
+    <banner />
+    <navbar />
   </div>
 </template>
+

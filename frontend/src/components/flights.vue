@@ -1,113 +1,109 @@
 <template>
   <div>
-    <div class="subtitle">Upcoming flights</div>
+    <div class="card-title">Ready for Takeoff! 🛫</div>
     <div class="card-container">
-      <div class="flight high-opacity">
+      <div class="card">
         <div class="card-content">
           <div class="card-header">Seville-Bologna</div>
           <div class="list">
-            <div class="list-item">Date: 25.1</div>
-            <div class="list-item">Departure Time: 6:07</div>
+            <div class="list-item">25.01</div>
+            <div class="list-item">6:07</div>
           </div>
         </div>
       </div>
 
-      <div class="flight high-opacity">
+      <div class="card">
         <div class="card-content">
           <div class="card-header">Bologna-Seville</div>
           <div class="list">
-            <div class="list-item">Date: 29.1</div>
-            <div class="list-item">Departure Time: 7:30</div>
+            <div class="list-item">29.01</div>
+            <div class="list-item">7:30</div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="subtitle">Past flights</div>
-    <div class="card-container low-opacity">
-      <div class="flight low-opacity">
+    <div class="card-title">🏁 Successful Flights</div>
+    <div class="card-container">
+      <div class="card transparent">
         <div class="card-content">
           <div class="card-header">Zagreb-Charleroi</div>
           <div class="list">
-            <div class="list-item">Date: 5.11</div>
-            <div class="list-item">Departure Time: 12:10</div>
+            <div class="list-item">5.11</div>
+            <div class="list-item">12:10</div>
           </div>
         </div>
-      
       </div>
     </div>
   </div>
 </template>
 
 <style>
-.subtitle {
-  font-family: 'Poppins';
-  font-weight: normal;
-  font-size: 18px;
-  margin-top: 30px;
-}
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  position: relative;
-  z-index: 2;
-}
-
-.flight {
-  background-image: url('../../img/123d277a-city-7964-164a8b5c3d0.svg');
-  background-size: cover;
-  background-position: center;
-  width: 100%; 
-  height: 120px;
+.card {
+  cursor: pointer;
+  width: 100%;
+  height: 200px;
   padding: 10px;
-  font-family: 'Poppins';
-  font-weight: bold;
-  color: black;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  border-radius: 9px;
+  font-family: Nunito;
+  border: 1px solid white;
+  /* White border */
   margin-top: 20px;
   margin-bottom: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  position: relative;
-  z-index: 1;
+  z-index: 9998;
+  color: white;
+  /* Set text color to white */
 }
 
-.high-opacity {
-  opacity: 0.80;
-}
-
-.medium-opacity {
-  opacity: 0.60;
-}
-
-.low-opacity {
-  opacity: 0.50;
+.card-title {
+  color: white;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .card-content {
-  font-family: 'Poppins';
+  font-family: 'Nunito';
   font-weight: normal;
-  font-size: 18px;
-  color: black;
+  font-size: 24px;
+  color: white;
   padding: 20px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card-header {
-  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .list {
   display: flex;
-  margin: auto;
-  padding: 20px;
 }
 
 .list-item {
-  flex: 1;
+  margin-right: 20px;
+}
+
+.pink {
+  background: linear-gradient(135deg, #A690E0, #CFA7E8);
+}
+
+.bg-teal {
+  background: linear-gradient(-45deg, #96B8FF, #CFA7E8);
+}
+
+.bg-blue {
+  background-color: #96B8FF;
+}
+
+.transparent {
+  opacity: 0.5;
 }
 </style>
