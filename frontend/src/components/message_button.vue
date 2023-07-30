@@ -1,22 +1,22 @@
 <template>
-    <router-link to="/Messages">
+  <router-link to="/Messages">
     <button class="button">Message</button>
-</router-link>
-  </template>
+  </router-link>
+</template>
   
-  <style>
-  .button {
-    font-family: 'Nunito';
-    font-weight: bold;
-    color: black;
-    background-color: #F1C933;
-    padding: 15px;
-    border-radius: 9px;
-    border: none;
-    width: 140px;
-    font-size: larger;
-    cursor: pointer;
- 
-  }
-  </style>
+<style>
+.button {
+  font-family: 'Nunito';
+  font-weight: bold;
+  color: black;
+  background-color: #F1C933;
+  padding: 15px;
+  border-radius: 9px;
+  border: none;
+  width: 140px;
+  font-size: larger;
+  cursor: pointer;
+
+}
+</style>
   

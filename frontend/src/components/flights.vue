@@ -2,7 +2,7 @@
   <div>
     <div class="card-title">Ready for Takeoff! 🛫</div>
     <div class="card-container">
-      <div class="card">
+      <div class="card pink">
         <div class="card-content">
           <div class="card-header">Seville-Bologna</div>
           <div class="list">
@@ -12,7 +12,7 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card bg-teal">
         <div class="card-content">
           <div class="card-header">Bologna-Seville</div>
           <div class="list">
@@ -25,7 +25,7 @@
 
     <div class="card-title">🏁 Successful Flights</div>
     <div class="card-container">
-      <div class="card transparent">
+      <div class="card bg-blue transparent">
         <div class="card-content">
           <div class="card-header">Zagreb-Charleroi</div>
           <div class="list">
@@ -42,7 +42,7 @@
 .card {
   cursor: pointer;
   width: 100%;
-  height: 200px;
+  height: 160px;
   padding: 10px;
   font-family: Nunito;
   border: 1px solid white;

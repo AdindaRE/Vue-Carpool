@@ -2,9 +2,9 @@
   <div class="card">
     <div class="row">
       <img src="../../img/driver.svg" alt="Avatar">
-      <div class="message-content">
+      <div class="message-container">
         <h1>Pedro</h1>
-        <div class="message-info">
+        <div class="message-text">
           <p>Hi, no problem see you later...</p>
           <span class="time-right">10:14</span>
         </div>
@@ -32,12 +32,6 @@
   /* Set text color to white */
 }
 
-.card::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 .row {
   display: flex;
   align-items: center;
@@ -50,26 +44,23 @@
   margin: 10px;
 }
 
-.message-content {
+.message-container {
   overflow: hidden;
 }
 
-.message-info {
+h1 {
+  font-size: 24px;
+}
+
+.message-text {
   display: flex;
   align-items: center;
   margin-top: 10px;
-}
-
-.message-info p {
-  margin-right: 10px;
+  margin-right: 16px;
+  color: white;
 }
 
 .time-right {
-  color: #aaa;
   margin-left: 40px;
-}
-
-p {
-  color: white;
 }
 </style>

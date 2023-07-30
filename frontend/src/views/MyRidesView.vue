@@ -3,14 +3,12 @@ import axios from 'axios';
 import main_title from '../components/main_title.vue';
 import Rate from '../components/rate.vue';
 import navbar from '../components/navbar.vue';
-import banner from '../components/banner.vue';
 import { getBookedRides } from "../composables/ridesApi.js";
 
 export default {
   components: {
     main_title,
     navbar,
-    banner,
     Rate
   },
   data() {
@@ -95,7 +93,7 @@ export default {
 
 <template>
   <div>
-    <main_title title="Ready to Roll?" />
+    <main_title title="Upcoming Rides" />
     <h3 class="card-title">Airport Bound! 🚀</h3>
     <h3 class="card-title"> 🚗 Upcoming Rides</h3>
     <div class="card-container">

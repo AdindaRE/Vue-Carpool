@@ -2,8 +2,8 @@
 	<div class="chat-window">
 		<div class="messages">
 			<div class="message" v-for="message in messages" v-bind:key="message._id">
-				<div class="username">{{message.username}}</div>
-				<div class="message-text">{{message.msg}}</div>
+				<div class="username">{{ message.username }}</div>
+				<div class="message-text">{{ message.msg }}</div>
 			</div>
 		</div>
 		<form class="input-container" v-on:submit="sendMessage">
@@ -41,43 +41,53 @@ export default {
 	display: flex;
 	flex-direction: column;
 	background-color: #F9F9F9;
-	box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.15);
+
 	.messages {
 		flex: 1;
 		overflow: scroll;
+		font-size: 24px;
+
 		.message {
 			display: flex;
 			border-bottom: 1px solid #EFEFEF;
 			padding: 10px;
+
 			&:last-of-type {
 				border-bottom: none;
 				border-color: #166BC8;
 			}
+
 			.username {
+				color: #96B8FF;
 				width: 100px;
-				margin-right: 15px;
+				margin-right: 20px;
 			}
+
 			.message-text {
-				font-family:'Poppins';
-    			font-weight: normal;
+				font-family: 'Poppins';
+				font-weight: normal;
 				color: black;
 				flex: 1;
+				margin-left: 20px;
 			}
 		}
 	}
+
 	.input-container {
 		display: flex;
+
 		input {
 			flex: 1;
 			height: 35px;
-			font-size: 18px;
+			font-size: 24px;
 			box-sizing: border-box;
 		}
+
 		button {
 			font-family: 'Poppins';
-    		font-weight: normal;
-			background-color:#F1C933;
-			color:black;
+			font-size: 16px;
+			background-color: #A690E0;
+			color: white;
 			width: 75px;
 			height: 35px;
 			box-sizing: border-box;

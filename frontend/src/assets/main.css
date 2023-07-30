@@ -12,6 +12,10 @@
 body {
   font-family: 'Nunito';
   font-style: normal;
+  background: linear-gradient(to bottom right, #A690E0, #96B8FF);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #app {
@@ -19,16 +23,4 @@ body {
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
-  background: linear-gradient(to bottom right, #A690E0, #96B8FF);
-}
-
-.button {
-  color: black;
-  background-color: #F1C933;
-  padding: 15px;
-  border-radius: 9px;
-  border: none;
-  width: 140px;
-  font-size: larger;
-  cursor: pointer;
 }
